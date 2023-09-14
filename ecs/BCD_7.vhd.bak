@@ -1,0 +1,48 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY BCD_7 IS
+	PORT(inD,inC,inB,inA,EN:IN STD_LOGIC;--
+		a,b,c,d,e,f,g:OUT STD_LOGIC);
+END BCD_7;
+
+ARCHITECTURE logic OF BCD_7 IS
+BEGIN
+	PROCESS(EN)
+	BEGIN
+		IF(inD='0' AND inC='0' AND inB='0' AND inA='0')THEN
+			a<='1'; b<='1'; c<='1'; d<='1'; e<='1'; f<='1'; g<='0';
+			
+		ELSIF(inD='0' AND inC='0' AND inB='0' AND inA='1')THEN
+			a<='0'; b<='1'; c<='1'; d<='0'; e<='0'; f<='0'; g<='0';
+			
+		ELSIF(inD='0' AND inC='0' AND inB='1' AND inA='0')THEN
+			a<='1'; b<='1'; c<='0'; d<='1'; e<='1'; f<='0'; g<='1';
+			
+		ELSIF(inD='0' AND inC='0' AND inB='1' AND inA='1')THEN
+			a<='1'; b<='1'; c<='1'; d<='1'; e<='0'; f<='0'; g<='1';
+			
+		ELSIF(inD='0' AND inC='1' AND inB='0' AND inA='0')THEN
+			a<='0'; b<='1'; c<='1'; d<='0'; e<='0'; f<='1'; g<='1';
+			
+		ELSIF(inD='0' AND inC='1' AND inB='0' AND inA='1')THEN
+			a<='1'; b<='0'; c<='1'; d<='1'; e<='0'; f<='1'; g<='1';
+			
+		ELSIF(inD='0' AND inC='1' AND inB='1' AND inA='0')THEN
+			a<='1'; b<='0'; c<='1'; d<='1'; e<='1'; f<='1'; g<='1';
+			
+		ELSIF(inD='0' AND inC='1' AND inB='1' AND inA='1')THEN
+			a<='1'; b<='1'; c<='1'; d<='0'; e<='0'; f<='0'; g<='0';
+			
+		ELSIF(inD='1' AND inC='0' AND inB='0' AND inA='0')THEN
+			a<='1'; b<='1'; c<='1'; d<='1'; e<='1'; f<='1'; g<='1';
+			
+		ELSIF(inD='1' AND inC='0' AND inB='0' AND inA='1')THEN
+			a<='1'; b<='1'; c<='1'; d<='1'; e<='0'; f<='1'; g<='1';
+			
+		ELSE
+			a<='0'; b<='0'; c<='1'; d<='0'; e<='1'; f<='0'; g<='1';
+		END IF;
+	END PROCESS;
+END logic;

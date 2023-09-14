@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+USE ieee.numeric_std.ALL;
+entity JUDGE_ALARM is
+port(	CLK,EN1:in std_logic;
+		M0,H0,M1,H1:in std_logic_vector(7 downto 0);
+		stop_alarm:in std_logic;
+		JUDGE_OUT:out std_logic);
+end JUDGE_ALARM;
+architecture BH of JUDGE_ALARM is
+SIGNAL alarm_state: INTEGER RANGE 0 TO 1 := 0;
+signal stopped : integer := 0;
+begin
+	process(clk,EN1,M0,H0,M1,H1,stop_alarm,stopped)
+		begin
+			if(EN1='1') then
+				if(clk'event and clk='0')then
+					if (M0(0)=M1(0) and M0(1)=M1(1) and M0(2)=M1(2) and M0(3)=M1(3)
+					and M0(4)=M1(4) and M0(5)=M1(5) and M0(6)=M1(6) and M0(7)=M1(7)
+					and H0(0)=H1(0) and H0(1)=H1(1) and H0(2)=H1(2) and H0(3)=H1(3) 
+					and H0(4)=H1(4) and H0(5)=H1(5) and H0(6)=H1(6) and H0(7)=H1(7) and stopped=0
+					) then
+						alarm_state<=1;
+
+					elsif (M0(0)=M1(0) and M0(1)=M1(1) and M0(2)=M1(2) and M0(3)=M1(3)
+					and M0(4)=M1(4) and M0(5)=M1(5) and M0(6)=M1(6) and M0(7)=M1(7)
+					and H0(0)=H1(0) and H0(1)=H1(1) and H0(2)=H1(2) and H0(3)=H1(3) 
+					and H0(4)=H1(4) and H0(5)=H1(5) and H0(6)=H1(6) and H0(7)=H1(7) and stopped=1) then
+						alarm_state<=0;
+					else 
+						alarm_state<=0;
+						stopped<=0;
+					end if;
+				end if;
+				if(stop_alarm='1' and alarm_state=1) then
+					alarm_state<=0;
+					stopped<=1;
+				end if;					
+				if (alarm_state=1) then
+					JUDGE_OUT<='1';
+				else
+					JUDGE_OUT<='0';
+				end if;
+			else JUDGE_OUT<='0';
+			end if;
+	end process;
+end BH;

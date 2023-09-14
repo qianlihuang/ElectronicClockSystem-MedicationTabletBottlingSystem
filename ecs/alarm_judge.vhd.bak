@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+entity alarm_judge is
+port(	clk,EN1:in std_logic;
+		M0A,M0B,H0A,H0B,M1A,M1B,H1A,H1B:in std_logic_vector(3 downto 0);--M0A,M0B,H0A,H0B is alarm's time while M1A,M1b,H1A,H1B is current time
+		jg_out:out std_logic);--link speaker--
+end alarm_judge;
+architecture a of alarm_judge is
+signal c:std_logic;
+signal flag : integer := 0;
+begin
+	process(EN1)
+	begin
+		if(EN1='1') then
+			flag<=1;
+		end if;
+	end process;
+	process(clk,flag,EN1,M0A,M0B,H0A,H0B,M1A,M1B,H1A,H1B)
+		begin
+			if(EN1='0' and flag=1) then
+			if(clk'event and clk='1')then
+				if (M0A(0)=M1A(0) and M0A(1)=M1A(1) and M0A(2)=M1A(2) and M0A(3)=M1A(3)
+				and M0B(0)=M1B(0) and M0B(1)=M1B(1) and M0B(2)=M1B(2) and M0B(3)=M1B(3)
+				and H0A(0)=H1A(0) and H0A(1)=H1A(1) and H0A(2)=H1A(2) and H0A(3)=H1A(3) 
+				and H0B(0)=H1B(0) and H0B(1)=H1B(1) and H0B(2)=H1B(2) and H0B(3)=H1B(3)) then
+				jg_out<='1';
+			else 
+				jg_out<='0';
+				end if;
+			end if;
+		  else jg_out<='0';
+		  end if;
+	end process;
+end a;

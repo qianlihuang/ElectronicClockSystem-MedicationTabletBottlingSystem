@@ -1,0 +1,38 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY show IS
+	PORT(
+		clk_1000:in std_logic;
+		ringin:in std_logic; 
+		load:in std_logic; 
+		green:out std_logic; 
+		red:out std_logic; 
+		ring:out std_logic 
+	);
+END ENTITY;
+
+
+ARCHITECTURE func OF show IS
+
+BEGIN	
+	process(load,ringin)
+	begin
+		if(ringin='0') then 
+			ring<='0';
+			if(load='1') then 
+				red<='1';
+				green<='0';
+			else 
+				red<='0';
+				green<='1';
+			end if;
+		else
+			red<='1';
+			green<='0';
+			ring<=clk_1000;
+		end if;
+	end process;
+end func;
+

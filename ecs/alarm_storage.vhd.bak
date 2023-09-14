@@ -1,0 +1,31 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+entity alarm_storage is
+port( CLK,CLK1,EN,EN1:IN STD_LOGIC;
+	IN1D,IN1C,IN1B,IN1A:IN STD_LOGIC;
+	IN0D,IN0C,IN0B,IN0A:IN STD_LOGIC;
+	OUT1:OUT STD_LOGIC_VECTOR(3 DOWNTO 0);--
+	OUT0:OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+end alarm_storage;
+architecture a of alarm_storage is
+signal Q1: STD_LOGIC_VECTOR(3 DOWNTO 0);
+signal Q0: STD_LOGIC_VECTOR(3 DOWNTO 0);
+begin
+	process(CLK,EN,EN1)
+	  begin
+		if(EN='0' and  EN1='1') then
+			if(CLK'event and CLk='1') then
+			Q1<=IN1D & IN1C & IN1B & IN1A ;
+			Q0<=IN0D & IN0C & IN0B & IN0A;
+			end if;
+		end if;
+		if(EN1='0' and EN='1') then
+			if(CLK1'EVENT and CLK1='1') then 
+			OUT1<=Q1;
+			OUT0<=Q0;
+			end if;
+		end if;
+end process;
+end a;

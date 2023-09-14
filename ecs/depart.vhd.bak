@@ -1,0 +1,31 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+entity CHIME is
+port(CLK:IN std_logic;
+	 CLK_HIGH:IN std_logic;
+	 CLK_MIDDLE:IN std_logic;
+	 CLK_LOW:IN std_logic;
+	 CHIME_OUT:OUT std_logic);--
+end CHIME;
+architecture bh of CHIME is
+begin
+process(clk,clk_high,clk_middle,clk_low)
+variable div :integer range 0 to 60;
+begin
+	if(clk'event and clk='1') then
+			if(div>0 and div < 20) then
+				chime_out<=clk_high;
+				div:=div+1;
+			elsif(div >= 20 and div <=40) then 
+			    chimr_out<=clk_middle;
+			    div:=div+1;
+			else
+				chime_out<=clk_low;
+				div:=div+1;
+			end if;
+	end if;
+end process;
+end bh;
+

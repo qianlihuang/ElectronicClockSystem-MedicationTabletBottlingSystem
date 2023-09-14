@@ -1,0 +1,87 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity set is
+	port(
+		choose:in std_logic_vector(1 downto 0);
+      	inc:in std_logic;
+      	setin:in std_logic; 
+      	switch:in std_logic;
+		pill_out:out std_logic_vector(11 downto 0);
+		bottle_out:out std_logic_vector(7 downto 0);
+		setout:out std_logic
+    );
+end set;
+
+architecture func of set is
+	signal pill1:std_logic_vector(3 downto 0):="0000";
+    signal pill0:std_logic_vector(3 downto 0):="0001";
+    signal bottle1:std_logic_vector(3 downto 0):="0000";
+    signal bottle0:std_logic_vector(3 downto 0):="0001";
+begin
+	process(inc,setin,pill0,pill1,bottle1,bottle0)
+	begin
+	if (setin='1') then
+		if (inc'event and inc='1') then
+		  case choose is
+				when "00" =>
+					 if (pill1="0101") then 
+						  pill0<="0000";
+					 else 
+						  if (pill0="1001") then
+								pill0<="0000";
+						  else
+								pill0<=pill0+1;
+						  end if;
+					 end if;
+				when "01" =>
+					 if (pill0="0000") then 
+						  if (pill1="0101") then
+								pill1<="0000";
+						  else
+								pill1<=pill1+1;
+						  end if;
+					 else 
+						  if (pill1="0100") then
+								pill1<="0000";
+						  else
+								pill1<=pill1+1;
+						  end if;
+					 end if;
+				when "10" => 
+					 if (bottle1="0000") then 
+						  if (bottle0="1001") then
+								bottle0<="0000";
+						  else
+								bottle0<=bottle0+1;
+						  end if;
+					 elsif (bottle1="0001") then 
+						  if (bottle0="1000") then
+								bottle0<="0000";
+						  else
+								bottle0<=bottle0+1;
+						  end if;
+					 end if;                       
+				when "11" => 
+					 if (bottle0="1001") then 
+						  bottle1<="0000";
+					 else 
+						  if (bottle1="0001") then
+								bottle1<="0000";
+						  else
+								bottle1<=bottle1+1;
+						  end if;
+					 end if;
+		  end case;
+		end if;
+	end if;
+	pill_out(3 downto 0)<=pill0;
+	pill_out(7 downto 4)<=pill1;
+	pill_out(11 downto 8)<="1111";
+	bottle_out(3 downto 0)<=bottle0;
+	bottle_out(7 downto 4)<=bottle1;
+	setout<=setin;
+	end process;
+end func;	 

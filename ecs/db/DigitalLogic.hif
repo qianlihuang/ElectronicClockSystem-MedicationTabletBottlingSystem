@@ -1,0 +1,1588 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+32
+1910
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+DigitalLogic
+# storage
+db|DigitalLogic.(0).cnf
+db|DigitalLogic.(0).cnf
+# case_insensitive
+# source_file
+DigitalLogic.bdf
+b2ba27d2d637d0ebce7bb2eda8c93f9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+CHIMEBELL
+# storage
+db|DigitalLogic.(1).cnf
+db|DigitalLogic.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+CHIMEBELL.vhd
+5da05ef3898160a788ddd6badd55276
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+CHIMEBELL:inst19
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+JUDGE_ALARM
+# storage
+db|DigitalLogic.(2).cnf
+db|DigitalLogic.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+JUDGE_ALARM.vhd
+79f39d5a0976c2c59f812f613df4a4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+JUDGE_ALARM:inst12
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+MOD_24
+# storage
+db|DigitalLogic.(3).cnf
+db|DigitalLogic.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+MOD_24.vhd
+bb72e2b6405a5ca695b33bb0a9c66dcd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+MOD_24:inst6
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+C_60_H
+# storage
+db|DigitalLogic.(4).cnf
+db|DigitalLogic.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+C_60_H.vhd
+479d4cfd829b8434338e2343e26cb2e1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+C_60_H:inst
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+MOD_60
+# storage
+db|DigitalLogic.(5).cnf
+db|DigitalLogic.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+MOD_60.vhd
+a6f0937db92c5de10643ad38ee1b636
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+MOD_60:inst2
+MOD_60:inst3
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+TWO_FOUR
+# storage
+db|DigitalLogic.(6).cnf
+db|DigitalLogic.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+TWO_FOUR.vhd
+3d4eedb7fc3fafef458572a05df16d34
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+TWO_FOUR:inst7
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+C_60
+# storage
+db|DigitalLogic.(7).cnf
+db|DigitalLogic.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+C_60.vhd
+b43d8eabc24a2d28acdbc317e9969ab4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+C_60:inst5
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+STORE_ALARM
+# storage
+db|DigitalLogic.(8).cnf
+db|DigitalLogic.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+STORE_ALARM.vhd
+d26fbdabbdbf9362da3a329aac881ce
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+STORE_ALARM:inst9
+STORE_ALARM:inst1
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+DISPLAY_7
+# storage
+db|DigitalLogic.(9).cnf
+db|DigitalLogic.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+DISPLAY_7.vhd
+1aa17f4377891a4add25eab46744ff
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+DISPLAY_7:inst10
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+EIGHT_FOUR
+# storage
+db|DigitalLogic.(10).cnf
+db|DigitalLogic.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+EIGHT_FOUT.vhd
+199dba3a142a51c763bfb0cdca81ce
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+EIGHT_FOUR:inst13
+}
+# lmf
+e:|quartus ii 9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|DigitalLogic.(11).cnf
+db|DigitalLogic.(11).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_counter.tdf
+9583d6cd53fa119b14456768b85150d1
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_CONNECTIVITY
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+aload
+-1
+3
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_compare.inc
+aec4ea1b78f4cda1c3effe18f1abbf63
+e:|quartus ii 9.0|quartus|libraries|megafunctions|cmpconst.inc
+e61874547688138e6fc0b49ff8760
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_counter.inc
+7f888b135ddf66f0653c44cb18ac5
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_counter_stratix.inc
+2251b94d26afaa53635df1aff6b6e7be
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_add_sub.inc
+7d9a33dd39f13aa690c3d0edd88351
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_counter_f10ke.inc
+536f8da8218b4a93689416f9baea1880
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_synch_counter_f.inc
+93a5aae1d8bd19c9e8e8eef93ab2177d
+e:|quartus ii 9.0|quartus|libraries|megafunctions|dffeea.inc
+55d29d20f7e852c37746bec4e2495ec
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_constant.inc
+dcde44eee59335c1e2fe75d574f9646
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_synch_counter.inc
+09966d10c3e95c888bf8e443df34d8
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|DigitalLogic.(12).cnf
+db|DigitalLogic.(12).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+2e51ebc96381892436afe139aaa6b25
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+DEF
+LPM_DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+REGISTERED_AT_END
+0
+PARAMETER_UNKNOWN
+DEF
+OPTIMIZE_FOR_SPEED
+9
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+datab3
+-1
+1
+datab2
+-1
+1
+datab1
+-1
+1
+datab0
+-1
+2
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_mercury_add_sub.inc
+ae39f15ed67cc9a095d29f68f6ad0f8
+e:|quartus ii 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+e:|quartus ii 9.0|quartus|libraries|megafunctions|look_add.inc
+ab9f577d30c5ef3166fab6c1c32c4a
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_stratix_add_sub.inc
+c08f604aefba5b4f1f554e565113c6
+}
+# macro_sequence
+
+# end
+# entity
+addcore
+# storage
+db|DigitalLogic.(13).cnf
+db|DigitalLogic.(13).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.tdf
+1b2b6ae11c95f15ac3d40e6c6c4170
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+width
+4
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.inc
+49de46f6a395e2e6edecabe6eac9d873
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+a_csnbuffer
+# storage
+db|DigitalLogic.(14).cnf
+db|DigitalLogic.(14).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.tdf
+0a953daa377c9212d3c374d37725bd
+7
+# user_parameter {
+WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+NEED_CARRY
+0
+PARAMETER_UNKNOWN
+DEF
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sout0
+-1
+3
+sin0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+a_csnbuffer
+# storage
+db|DigitalLogic.(15).cnf
+db|DigitalLogic.(15).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.tdf
+0a953daa377c9212d3c374d37725bd
+7
+# user_parameter {
+WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+NEED_CARRY
+0
+PARAMETER_UNKNOWN
+DEF
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sout3
+-1
+3
+sout2
+-1
+3
+sout1
+-1
+3
+sout0
+-1
+3
+sin3
+-1
+3
+sin2
+-1
+3
+sin1
+-1
+3
+sin0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+addcore
+# storage
+db|DigitalLogic.(16).cnf
+db|DigitalLogic.(16).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.tdf
+1b2b6ae11c95f15ac3d40e6c6c4170
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+width
+8
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+SIGNED
+PARAMETER_UNKNOWN
+USR
+DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+unreg_result3
+-1
+3
+unreg_result2
+-1
+3
+unreg_result1
+-1
+3
+unreg_result0
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.inc
+49de46f6a395e2e6edecabe6eac9d873
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+a_csnbuffer
+# storage
+db|DigitalLogic.(17).cnf
+db|DigitalLogic.(17).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.tdf
+0a953daa377c9212d3c374d37725bd
+7
+# user_parameter {
+WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+NEED_CARRY
+0
+PARAMETER_UNKNOWN
+DEF
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sout0
+-1
+3
+sin0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+a_csnbuffer
+# storage
+db|DigitalLogic.(18).cnf
+db|DigitalLogic.(18).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.tdf
+0a953daa377c9212d3c374d37725bd
+7
+# user_parameter {
+WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+NEED_CARRY
+0
+PARAMETER_UNKNOWN
+DEF
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sout7
+-1
+3
+sout6
+-1
+3
+sout5
+-1
+3
+sout4
+-1
+3
+sout3
+-1
+3
+sout2
+-1
+3
+sout1
+-1
+3
+sout0
+-1
+3
+sin7
+-1
+3
+sin6
+-1
+3
+sin5
+-1
+3
+sin4
+-1
+3
+sin3
+-1
+3
+sin2
+-1
+3
+sin1
+-1
+3
+sin0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|DigitalLogic.(19).cnf
+db|DigitalLogic.(19).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|altshift.tdf
+b979c99547bac7dc31574fe678a95a9
+7
+# user_parameter {
+WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|DigitalLogic.(20).cnf
+db|DigitalLogic.(20).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|altshift.tdf
+b979c99547bac7dc31574fe678a95a9
+7
+# user_parameter {
+WIDTH
+1
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result0
+-1
+3
+data0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_constant
+# storage
+db|DigitalLogic.(21).cnf
+db|DigitalLogic.(21).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_constant.tdf
+a4c1888f3ad76eefbd4c233917888d8
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_CVALUE
+0
+PARAMETER_UNKNOWN
+USR
+ENABLE_RUNTIME_MOD
+NO
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+USR
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|DigitalLogic.(22).cnf
+db|DigitalLogic.(22).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|lpm_add_sub.tdf
+2e51ebc96381892436afe139aaa6b25
+7
+# user_parameter {
+LPM_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+REGISTERED_AT_END
+0
+PARAMETER_UNKNOWN
+DEF
+OPTIMIZE_FOR_SPEED
+9
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_3kh
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab3
+-1
+1
+datab2
+-1
+1
+datab1
+-1
+1
+cin
+-1
+1
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|bypassff.inc
+8e8df160d449a63ec15dc86ecf2b373f
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_mercury_add_sub.inc
+ae39f15ed67cc9a095d29f68f6ad0f8
+e:|quartus ii 9.0|quartus|libraries|megafunctions|altshift.inc
+70fa13aee7d6d160ef20b2de32813a
+e:|quartus ii 9.0|quartus|libraries|megafunctions|look_add.inc
+ab9f577d30c5ef3166fab6c1c32c4a
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+e:|quartus ii 9.0|quartus|libraries|megafunctions|alt_stratix_add_sub.inc
+c08f604aefba5b4f1f554e565113c6
+}
+# macro_sequence
+
+# end
+# entity
+addcore
+# storage
+db|DigitalLogic.(23).cnf
+db|DigitalLogic.(23).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.tdf
+1b2b6ae11c95f15ac3d40e6c6c4170
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+width
+4
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.inc
+49de46f6a395e2e6edecabe6eac9d873
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# entity
+addcore
+# storage
+db|DigitalLogic.(24).cnf
+db|DigitalLogic.(24).cnf
+# case_insensitive
+# source_file
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.tdf
+1b2b6ae11c95f15ac3d40e6c6c4170
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+width
+8
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+DIRECTION
+ADD
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+MAX7000S
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+unreg_result3
+-1
+3
+unreg_result2
+-1
+3
+unreg_result1
+-1
+3
+unreg_result0
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab3
+-1
+3
+datab2
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cin
+-1
+3
+}
+# include_file {
+e:|quartus ii 9.0|quartus|libraries|megafunctions|addcore.inc
+ff795e21e4847824c03218724f1a1252
+e:|quartus ii 9.0|quartus|libraries|megafunctions|a_csnbuffer.inc
+49de46f6a395e2e6edecabe6eac9d873
+e:|quartus ii 9.0|quartus|libraries|megafunctions|aglobal90.inc
+99832fdf63412df51d7531202d74e75
+}
+# macro_sequence
+
+# end
+# complete
+

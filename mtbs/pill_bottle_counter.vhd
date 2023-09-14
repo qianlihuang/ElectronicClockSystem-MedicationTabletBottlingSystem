@@ -1,0 +1,148 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+entity pill_bottle_counter is
+	port(clk : in STD_LOGIC;
+		reset : in STD_LOGIC;
+		load:in std_logic;
+		setin:in std_logic;
+		pill_set:in std_logic_vector(11 downto 0);
+		bottle_set:in std_logic_vector(7 downto 0);
+		switch:in std_logic;
+		pill_out:out std_logic_vector(7 downto 0);
+		total_out:out std_logic_vector(11 downto 0);
+		ring:out std_logic
+    );
+end pill_bottle_counter;
+
+architecture Behavioral of pill_bottle_counter is
+    signal pillcount1:STD_LOGIC_VECTOR(3 DOWNTO 0):="0000";
+    signal pillcount0:STD_LOGIC_VECTOR(3 DOWNTO 0):="0000";
+    signal bottlecount1:STD_LOGIC_VECTOR(3 DOWNTO 0):="0000";
+    signal bottlecount0:STD_LOGIC_VECTOR(3 DOWNTO 0):="0000";
+	signal cnt100,cnt10,cnt1:STD_LOGIC_VECTOR(3 DOWNTO 0);
+	signal r:STD_LOGIC:='1';
+	SIGNAL blink_state: INTEGER RANGE 0 TO 1 := 0;
+begin
+	process(clk,reset,load,setin,pill_set,bottle_set,r,cnt100,cnt10,cnt1)
+	variable finish:std_logic:='1';
+	begin
+		if(setin='0')then
+			if (clk'event and clk='1'and finish='1') then
+				if(bottle_set="00010000")then
+					if(bottlecount1="0000" and bottlecount0="1001" and pillcount1=pill_set(7 downto 4) and pillcount0=pill_set(3 downto 0))then
+						finish:='0';
+					else
+						finish:='1';
+					end if;
+				elsif (bottlecount1=bottle_set(7 downto 4) and bottlecount0+1=bottle_set(3 downto 0)) then 
+					if(pillcount1=pill_set(7 downto 4) and pillcount0=pill_set(3 downto 0))then
+						finish:='0';
+					else
+						finish:='1';
+					end if;
+				end if;
+				
+				if(load='0' and reset='1')then
+				 	if (pillcount1=pill_set(7 downto 4) and pillcount0=pill_set(3 downto 0)) then 
+					 	pillcount0<="0001";
+					 	pillcount1<="0000";
+					 	if (bottlecount0="1001") then 
+						  	bottlecount0<="0000";
+						  	bottlecount1<=bottlecount1+1;
+					 	else
+						  	bottlecount0<=bottlecount0+1;
+					 	end if;
+					elsif (pillcount0="1001") then 
+						pillcount0<="0000";
+						pillcount1<=pillcount1+1;
+					else
+						pillcount0<=pillcount0+1;
+					end if;
+				 
+					if(finish='1')then
+						if(cnt1="1001" and finish='1') then
+							if(cnt10="1001") then 
+								cnt1<="0000";
+								cnt10<="0000";
+								cnt100<=cnt100+'1';
+							else
+								cnt1<="0000";
+								cnt10<=cnt10+'1';
+							end if;		
+						elsif(finish='1')then
+							cnt1<=cnt1+'1';
+						end if;
+					end if;
+				end if;
+			end if;
+
+			if(reset='0')then
+				pillcount1<="0000";
+				pillcount0<="0000";
+				bottlecount1<="0000";
+				bottlecount0<="0000";
+				cnt100<="0000";
+				cnt10<="0000";
+				cnt1<="0000";
+				finish:='1';
+			end if;
+
+			
+			if (bottlecount1=bottle_set(7 downto 4) and bottlecount0=bottle_set(3 downto 0) ) then 
+            	r<='1';
+				pillcount0<="0000";
+				pillcount1<="0000";
+			else
+				r<='0';
+			end if;
+			
+			
+			
+			case switch is
+			when '1'=>
+				pill_out(3 downto 0)<="1111";
+		 		pill_out(7 downto 4)<="1111";
+		 		total_out(11 downto 8)<="1111";
+				total_out(7 downto 4)<=bottlecount1;
+				total_out(3 downto 0)<=bottlecount0;
+			when others=>
+		 	if(load='0')then
+		 		pill_out(3 downto 0)<=pillcount0;
+		 		pill_out(7 downto 4)<=pillcount1;
+		 		total_out(11 downto 8)<=cnt100;
+				total_out(7 downto 4)<=cnt10;
+				total_out(3 downto 0)<=cnt1;
+			else 		 
+		 		pill_out(3 downto 0)<=bottlecount0;
+		 		pill_out(7 downto 4)<=bottlecount1;
+		 		total_out(11 downto 8)<="1111";
+				total_out(7 downto 4)<=pillcount1;
+				total_out(3 downto 0)<=pillcount0;
+			end if;
+			end case;
+		 	ring<=r;
+		 
+		else
+			IF(CLK'EVENT AND CLK='1')THEN
+				blink_state <= (blink_state + 1) MOD 2;
+			END IF;
+			IF (blink_state = 0) THEN
+					total_out(11 downto 8)<=pill_set(11 downto 8);
+					total_out(7 downto 4)<=pill_set(7 downto 4);
+					total_out(3 downto 0)<=pill_set(3 downto 0);
+					pill_out(7 downto 4)<=bottle_set(7 downto 4);
+					pill_out(3 downto 0)<=bottle_set(3 downto 0);
+			ELSE
+				total_out(11 downto 8)<= "1111";
+				total_out(7 downto 4)<= "1111";
+				total_out(3 downto 0)<= "1111";
+				pill_out(7 downto 4)<="1111";
+				pill_out(3 downto 0)<="1111";
+			END IF;
+			ring<='0';
+		end if;
+	end process;
+end Behavioral;
